@@ -9,7 +9,7 @@ APP_VERSION = os.environ.get("APP_VERSION", "unknown")
 
 @app.route('/')
 def hello_world():
-    return jsonify(message=f"Hello, this is {APP_VERSION} of the application!")
+    return jsonify(message=f"Hello, this is {APP_VERSION} of the application")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
